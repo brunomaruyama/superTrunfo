@@ -93,5 +93,75 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km2\n", densidadePopulacional2);
     printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
 
+    // Comparações
+    printf("\n--- Comparações ---\n");
+    if (populacao1 > populacao2) {
+        printf("A carta 1 tem uma população maior que a carta 2.\n");
+    } else if (populacao1 < populacao2) {
+        printf("A carta 2 tem uma população maior que a carta 1.\n");
+    } else {
+        printf("As duas cartas têm a mesma população.\n");
+    }
+
+    if (area1 > area2) {
+        printf("A carta 1 tem uma área maior que a carta 2.\n");
+    } else if (area1 < area2) {
+        printf("A carta 2 tem uma área maior que a carta 1.\n");
+    } else {
+        printf("As duas cartas têm a mesma área.\n");
+    }
+
+    if (pib1 > pib2) {
+        printf("A carta 1 tem um PIB maior que a carta 2.\n");
+    } else if (pib1 < pib2) {
+        printf("A carta 2 tem um PIB maior que a carta 1.\n");
+    } else {
+        printf("As duas cartas têm o mesmo PIB.\n");
+    }
+
+    if (pib1 > pib2) {
+        printf("A carta 1 tem um PIB per capita maior que a carta 2.\n");
+    } else if (pib1 < pib2) {
+        printf("A carta 2 tem um PIB per capita maior que a carta 1.\n");
+    } else {
+        printf("As duas cartas têm o mesmo PIB per capita.\n");
+    }
+
+    if (pontosTurismo1 > pontosTurismo2) {
+        printf("A carta 1 tem mais pontos turísticos que a carta 2.\n");
+    } else if (pontosTurismo1 < pontosTurismo2) {
+        printf("A carta 2 tem mais pontos turísticos que a carta 1.\n");
+    } else {
+        printf("As duas cartas têm o mesmo número de pontos turísticos.\n");
+    }
+
+    if (densidadePopulacional1 > densidadePopulacional2) {
+        printf("A carta 1 tem uma densidade populacional maior que a carta 2.\n");
+    } else if (densidadePopulacional1 < densidadePopulacional2) {
+        printf("A carta 2 tem uma densidade populacional maior que a carta 1.\n");
+    } else {
+        printf("As duas cartas têm a mesma densidade populacional.\n");
+    }
+
+    if (pibPerCapita1 > pibPerCapita2) {
+        printf("A carta 1 tem um PIB per capita maior que a carta 2.\n");
+    } else if (pibPerCapita1 < pibPerCapita2) {
+        printf("A carta 2 tem um PIB per capita maior que a carta 1.\n");
+    } else {
+        printf("As duas cartas têm o mesmo PIB per capita.\n");
+    }
+
+    // Verifica atributos totais
+    if (area1 + pontosTurismo1 + densidadePopulacional1 + pibPerCapita1 >
+        area2 + pontosTurismo2 + densidadePopulacional2 + pibPerCapita2) {
+        printf("A carta 1 é mais forte que a carta 2.\n");
+    } else if (area1 + pontosTurismo1 + densidadePopulacional1 + pibPerCapita1 <
+               area2 + pontosTurismo2 + densidadePopulacional2 + pibPerCapita2) {
+        printf("A carta 2 é mais forte que a carta 1.\n");
+    } else {
+        printf("As duas cartas são igualmente fortes.\n");
+    }
+
+
     return 0;
 }
